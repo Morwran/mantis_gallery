@@ -66,21 +66,22 @@ function gallery_wrapper(){
 	
 	html += '.weight_list_cls{';
 	html += '	background-color: rgba(155, 79, 178, 0.67);';
-	html += '    color: #ffffff;';
+	html += '   color: #ffffff;';
 	html += '}';
 	
 	html += '.gallery_wrapper{';
 	html += '	padding-top: 5%;';
-	html += '    width: 90%;';
+	html += '   width: 90%;';
 	html += '}';
 		
 	html += '.galleryTable{';
 	html += '	display: table;';
-	html += '	width: 90%;';
+	html += '	width: 80%;';
 	html += '	min-width: 300px;';
 	html += '  	opacity: 1;';
 	html += '  	-moz-opacity: 1;';
 	html += '  	padding-top: 7px;';
+	html += '	background-color: #00000047;';
 	html += '}';
 	html += '.gallery_edit{';
 	html += '    width: 100%;';
@@ -108,14 +109,13 @@ function gallery_wrapper(){
 	html += '	font-size: 14pt;';
 	html += '}';
 	html += '.gallery_exit{';
-	html += '/*width: 10%;*/';
-	html += 'color: #ffffff;';
-	html += 'font-size: max(0.5em, min(1.1em, calc(100vw * 1.1 / 75)));';
-	html += '-moz-user-select: none;';
-  	html += '-khtml-user-select: none;';
-  	html += '-webkit-user-select: none;';
-  	html += 'user-select: none;';
-  	html += 'vertical-align: middle;';
+	html += '	color: #ffffff;';
+	html += '	font-size: max(0.5em, min(1.1em, calc(100vw * 1.1 / 75)));';
+	html += '	-moz-user-select: none;';
+  	html += '	-khtml-user-select: none;';
+  	html += '	-webkit-user-select: none;';
+  	html += '	user-select: none;';
+  	html += '	vertical-align: middle;';
 	html += '}';
 	html += '.gallery_exit:hover {background-color: rgb(168 237 251 / 54%) !important; }';
 	html += '.gallery_border{';
@@ -132,7 +132,7 @@ function gallery_wrapper(){
 	html += '	font-weight:bold;';
 	html += '	border: 2px solid #ffffff87;';
 	html += '	background-color: rgba(155, 79, 178, 0.67);';
-	html += '    border-radius: 7px;';
+	html += '   border-radius: 7px;';
 	html += '}';
 	html += '.gallery_num:hover{';
 	html += '	background-color:#6875b9;';
@@ -150,7 +150,6 @@ function gallery_wrapper(){
 	html += '	/*padding: 3px 10px;*/';
 	html += '}';
 	html += '.galleryTableHeading {';
-	html += '	/*background-color: #EEE;*/';
 	html += '	display: table-header-group;';
 	html += '	font-weight: bold;';
 	html += '}';
@@ -163,17 +162,16 @@ function gallery_wrapper(){
 	html += '	display: table-row-group;';
 	html += '}';
 
-
 	html +='.blackBackground {';
-    html +='position: fixed !important;';
-    html +='_position: absolute !important;';
-    html +='height: 100%;';
-    html +='width: 100%;';
-    html +='top: 0;';
-    html +='left: 0;';
-    html +='border: 1px solid #cecece;';
-    html +='z-index: 9997;';
-    html +='background: rgba(0, 0, 0, 0.7);';
+    html +='	position: fixed !important;';
+    html +='	_position: absolute !important;';
+    html +='	height: 100%;';
+    html +='	width: 100%;';
+    html +='	top: 0;';
+    html +='	left: 0;';
+    html +='	border: 1px solid #cecece;';
+    html +='	z-index: 9997;';
+    html +='	background: rgba(0, 0, 0, 0.7);';
 	html +='}';
 
 	html +='.img_summ{';
@@ -188,7 +186,6 @@ function gallery_wrapper(){
 	html +=' 	border-radius: 3px;';
 	html +='}';
 
-
 	html +='.img_nav {';
     html +='	position: absolute;';
     html +='	left: 0;';
@@ -197,8 +194,6 @@ function gallery_wrapper(){
     html +='	width: 100%;';
     html +='	height: 100%;';
 	html +='}';	
-
-
 
 	html +='.img_prev {';
     html +='	width: 34%;';
@@ -245,10 +240,8 @@ function gallery_wrapper(){
 	html += '</style>';
 	html += '</center>';
 	html += '</div>';
-			
-	html += '</div>';
 
-	//html += '</div>';
+	html += '</div>';
 
 	html += '<div class="blackBackground" style="display: none;">&nbsp;</div>';
 
