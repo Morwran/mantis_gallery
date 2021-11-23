@@ -2,13 +2,10 @@
 var img_list;
 
 $(document).ready(function(){
-		
-	console.log("loaded:", location.href);
+
 	img_list = find_img();
 	if(img_list.length){
-		console.log("length", img_list.length);
 		$('body').prepend(gallery_wrapper());
-
 	}
 
 })
@@ -252,14 +249,11 @@ function find_img(){
 	var img_list = $('td a > img:not([src^="http://"])').filter(function() {
 		return $(this).attr('src').indexOf('.png') < 0;
 	});
-	// расшифровка: нечётные (:odd) ссылки внутри li,
-	// кроме тех (:not), у которых атрибут href начинается c http://
-	console.log("img_list", img_list);
+
 	img_list.each(function(){
 		$(this).closest('a').removeAttr("href");
 		if(!$(this).closest('a').hasClass('showGallery'))
 			$(this).closest('a').addClass('showGallery');
-		console.log("img :", $(this).attr('src'));
 	});
 
 	return img_list;
@@ -274,10 +268,8 @@ function getImgId(src){
 	var cnt = 0;
 	img_list.each(function(){
 		cnt++;
-		console.log("src ", $(this).attr('src'), src);
 		if($(this).attr('src') == src){
-			console.log("equal! ", cnt);
-			 return false;
+			return false;
 		}
 	});
 
@@ -295,7 +287,6 @@ function click_next()
 	var img_id = getImgId($('.img_src').attr('src'));
 	if(img_id < img_list.length){
 		$('.img_prev').show();
-		console.log("img_list[img_id]", img_list[img_id]);
 		var img_summ = "Image " + (img_id + 1) + " of " + img_list.length;
 		$('.img_src').attr('src', $(img_list[img_id]).attr('src'));
  		$('.img_summ').text(img_summ);
