@@ -33,5 +33,5 @@
 * Click on the picture you are interested in
 ![alt text](screenshots/load.png "Launch")
 * Scrolling through pictures is available both with the mouse and with the keyboard (left / right arrows buttons)
-* Closing is also available by Esc key
+* Exiting the application is also available by Esc key
 ![alt text](screenshots/touch.png "Surfing")
